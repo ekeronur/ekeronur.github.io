@@ -56,8 +56,9 @@
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 9px;
+  width: 8%;
+  height: 10%;
   border: none;
   text-align: left;
   outline: none;
@@ -84,25 +85,33 @@
   		<!-- <div class="col-sm-6 clearfix"> -->
 			 <div class="well">
 
-				
 				<pubtit>Feature pyramid networks for object detection</pubtit>
+        
+          <a href="https://arxiv.org/abs/1612.03144v1">[P]</a>
+        
 
-				<p><em>Lin, Tsung-Yi and Dollár, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge</em></p>
+				<p><i>Lin, Tsung-Yi and Dollár, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge</i></p>
 
-				<button class="collapsible" data-toggle="collapse" data-target="#demo">Collapsible</button>
-				<div id="demo" class="collapse">
-						Lorem ipsum dolor text....
+        
+				<button class="collapsible" data-toggle="collapse" data-target="#lin2017feature"><b>Abstract</b></button>
+				<div id="lin2017feature" class="collapse">
+  					        <p>Feature pyramids are a basic component in recognition systems for detecting objects at different scales. But recent deep learning object detectors have avoided pyramid representations, in part because they are compute and memory intensive. In this paper, we exploit the inherent multi-scale, pyramidal hierarchy of deep convolutional networks to construct feature pyramids with marginal extra cost. A top-down architecture with lateral connections is developed for building high-level semantic feature maps at all scales. This architecture, called a Feature Pyramid Network (FPN), shows significant improvement as a generic feature extractor in several applications. Using FPN in a basic Faster R-CNN system, our method achieves state-of-the-art single-model results on the COCO detection benchmark without bells and whistles, surpassing all existing single-model entries including those from the COCO 2016 challenge winners. In addition, our method can run at 5 FPS on a GPU and thus is a practical and accurate solution to multi-scale object detection. Code will be made publicly available.
+  </p>
 				</div>
+        
 
 				
-				<p>Proceedings of the IEEE conference on computer vision and pattern recognition, 2017 </p>
+				<p>Proceedings of the IEEE conference on computer vision and pattern recognition, 2017. </p>
 				
+
+
 				<!-- <p>@inproceedings{lin2017feature,
   title = {Feature pyramid networks for object detection},
   author = {Lin, Tsung-Yi and Doll{\'a}r, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
   booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
   pages = {2117--2125},
-  year = {2017}
+  year = {2017},
+  link = {https://arxiv.org/abs/1612.03144v1}
 }
 </p> -->
 			</div>
@@ -111,22 +120,6 @@
   </div>
 </div>
 
-<script type="text/javascript" src="/js/bootstrap.js">
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
 
 	
 <!-- 
@@ -148,8 +141,9 @@ for (i = 0; i < coll.length; i++) {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 9px;
+  width: 8%;
+  height: 10%;
   border: none;
   text-align: left;
   outline: none;
@@ -176,19 +170,18 @@ for (i = 0; i < coll.length; i++) {
   		<!-- <div class="col-sm-6 clearfix"> -->
 			 <div class="well">
 
-				
 				<pubtit>Rich feature hierarchies for accurate object detection and semantic segmentation</pubtit>
+        
 
-				<p><em>Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra</em></p>
+				<p><i>Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra</i></p>
 
-				<button class="collapsible" data-toggle="collapse" data-target="#demo">Collapsible</button>
-				<div id="demo" class="collapse">
-						Lorem ipsum dolor text....
-				</div>
+        
 
 				
-				<p>Proceedings of the IEEE conference on computer vision and pattern recognition, 2014 </p>
+				<p>Proceedings of the IEEE conference on computer vision and pattern recognition, 2014. </p>
 				
+
+
 				<!-- <p>@inproceedings{girshick2014rich,
   title = {Rich feature hierarchies for accurate object detection and semantic segmentation},
   author = {Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra},
@@ -203,22 +196,6 @@ for (i = 0; i < coll.length; i++) {
   </div>
 </div>
 
-<script type="text/javascript" src="/js/bootstrap.js">
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
 
 	
 <!-- 
@@ -240,8 +217,9 @@ for (i = 0; i < coll.length; i++) {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 9px;
+  width: 8%;
+  height: 10%;
   border: none;
   text-align: left;
   outline: none;
@@ -268,19 +246,18 @@ for (i = 0; i < coll.length; i++) {
   		<!-- <div class="col-sm-6 clearfix"> -->
 			 <div class="well">
 
-				
 				<pubtit>Caffe: Convolutional architecture for fast feature embedding</pubtit>
+        
 
-				<p><em>Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor</em></p>
+				<p><i>Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor</i></p>
 
-				<button class="collapsible" data-toggle="collapse" data-target="#demo">Collapsible</button>
-				<div id="demo" class="collapse">
-						Lorem ipsum dolor text....
-				</div>
+        
 
 				
-				<p>Proceedings of the 22nd ACM international conference on Multimedia, 2014 </p>
+				<p>Proceedings of the 22nd ACM international conference on Multimedia, 2014. </p>
 				
+
+
 				<!-- <p>@inproceedings{jia2014caffe,
   title = {Caffe: Convolutional architecture for fast feature embedding},
   author = {Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor},
@@ -295,22 +272,6 @@ for (i = 0; i < coll.length; i++) {
   </div>
 </div>
 
-<script type="text/javascript" src="/js/bootstrap.js">
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
 
 	
 <!-- 
@@ -332,8 +293,9 @@ for (i = 0; i < coll.length; i++) {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 9px;
+  width: 8%;
+  height: 10%;
   border: none;
   text-align: left;
   outline: none;
@@ -360,19 +322,18 @@ for (i = 0; i < coll.length; i++) {
   		<!-- <div class="col-sm-6 clearfix"> -->
 			 <div class="well">
 
-				
 				<pubtit>Object detection with discriminatively trained part-based models</pubtit>
+        
 
-				<p><em>Felzenszwalb, Pedro F and Girshick, Ross B and McAllester, David and Ramanan, Deva</em></p>
+				<p><i>Felzenszwalb, Pedro F and Girshick, Ross B and McAllester, David and Ramanan, Deva</i></p>
 
-				<button class="collapsible" data-toggle="collapse" data-target="#demo">Collapsible</button>
-				<div id="demo" class="collapse">
-						Lorem ipsum dolor text....
-				</div>
+        
 
 				
-				<p>IEEE transactions on pattern analysis and machine intelligence, 2009 </p>
+				<p>IEEE transactions on pattern analysis and machine intelligence, 2009. </p>
 				
+
+
 				<!-- <p>@article{felzenszwalb2009object,
   title = {Object detection with discriminatively trained part-based models},
   author = {Felzenszwalb, Pedro F and Girshick, Ross B and McAllester, David and Ramanan, Deva},
@@ -390,22 +351,6 @@ for (i = 0; i < coll.length; i++) {
   </div>
 </div>
 
-<script type="text/javascript" src="/js/bootstrap.js">
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
 
 	
 <!-- 
