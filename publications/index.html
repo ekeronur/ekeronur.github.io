@@ -27,8 +27,9 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	
-    <a class="navbar-brand" href="/">Turkish Machine Vision Lab</a>
+
+    <a class="navbar-brand" href="/">Turkish Machine Vision Lab </a>
+    <a href="#" class="navbar-brand" style="padding:0px;margin:auto"><img style="height:35%;width: auto;" src="/images/tmvl.png" class="img-responsive"></a>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
@@ -85,33 +86,33 @@
   		<!-- <div class="col-sm-6 clearfix"> -->
 			 <div class="well">
 
-				<pubtit>Feature pyramid networks for object detection</pubtit>
-        
-          <a href="https://arxiv.org/abs/1612.03144v1">[P]</a>
+				<pubtit>Boosting real-time recognition of hand posture and gesture for virtual mouse operations with segmentation</pubtit>
         
 
-				<p><i>Lin, Tsung-Yi and Dollár, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge</i></p>
+				<p><i>Ozturk, Orkun and Aksac, Alper and Ozyer, Tansel and Alhajj, Reda</i></p>
 
         
-				<button class="collapsible" data-toggle="collapse" data-target="#lin2017feature"><b>Abstract</b></button>
-				<div id="lin2017feature" class="collapse">
-  					        <p>Feature pyramids are a basic component in recognition systems for detecting objects at different scales. But recent deep learning object detectors have avoided pyramid representations, in part because they are compute and memory intensive. In this paper, we exploit the inherent multi-scale, pyramidal hierarchy of deep convolutional networks to construct feature pyramids with marginal extra cost. A top-down architecture with lateral connections is developed for building high-level semantic feature maps at all scales. This architecture, called a Feature Pyramid Network (FPN), shows significant improvement as a generic feature extractor in several applications. Using FPN in a basic Faster R-CNN system, our method achieves state-of-the-art single-model results on the COCO detection benchmark without bells and whistles, surpassing all existing single-model entries including those from the COCO 2016 challenge winners. In addition, our method can run at 5 FPS on a GPU and thus is a practical and accurate solution to multi-scale object detection. Code will be made publicly available.
-  </p>
+				<button class="collapsible" data-toggle="collapse" data-target="#ozturk2015boosting"><b>Abstract</b></button>
+				<div id="ozturk2015boosting" class="collapse">
+  					        <p>The design and implementation of polylogarithmically or polynomially bounded algorithms on faster processors has gained popularity and attracted the attention of both researchers and practitioners. The evolution in the computer hardware technology has boosted the development of real-time applications which are expected to respond within a strict time frame. One attractive sophisticated application, which requires real time response, is image capturing and recognition for effective human computer interaction. It is gaining popularity, especially after the development of hand held devices and touch screens. Real-time video processing response time is expressed by means of frame sequences; device dependent capability (20 frame/sec) designates real-time restrictions (a frame is needed to be processed within 50 ms). Video processing of virtual mouse operations requires real-time recognition, i.e., no delay in response can be tolerated. There are indeed several attempts to recognize hand gestures for different purposes. Sign language recognition stands out as the most popular one. However, virtual mouse operations may also be used in general by the majority of people in parallel for the proliferation of different applications on a variety of platforms such as tablet PCs, embedded devices, etc. One significant advantage of such systems fulfills the need for extra hardware system. To this end, we have developed a novel real-time virtual mouse application. Our system architecture recognizes defined postures and gestures. We have implemented, tested, and compared the performance of four methods, namely Chai (static), face (dynamic), regional (dynamic), and Duan. Further, various conditions, such as lighting, distinguishing skin color, and complex background have been considered and discussed.
+</p>
 				</div>
         
 
 				
-				<p>Proceedings of the IEEE conference on computer vision and pattern recognition, 2017. </p>
+				<p>Applied Intelligence, 2015. </p>
 				
 
 
-				<!-- <p>@inproceedings{lin2017feature,
-  title = {Feature pyramid networks for object detection},
-  author = {Lin, Tsung-Yi and Doll{\'a}r, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
-  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
-  pages = {2117--2125},
-  year = {2017},
-  link = {https://arxiv.org/abs/1612.03144v1}
+				<!-- <p>@article{ozturk2015boosting,
+  title = {Boosting real-time recognition of hand posture and gesture for virtual mouse operations with segmentation},
+  author = {Ozturk, Orkun and Aksac, Alper and Ozyer, Tansel and Alhajj, Reda},
+  journal = {Applied Intelligence},
+  volume = {43},
+  number = {4},
+  pages = {786--801},
+  year = {2015},
+  publisher = {Springer}
 }
 </p> -->
 			</div>
@@ -170,24 +171,30 @@
   		<!-- <div class="col-sm-6 clearfix"> -->
 			 <div class="well">
 
-				<pubtit>Rich feature hierarchies for accurate object detection and semantic segmentation</pubtit>
+				<pubtit>Geodezik mesafe tabanlı etkileşimli resim bölümlemesi</pubtit>
         
 
-				<p><i>Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra</i></p>
+				<p><i>Öztürk, Orkun</i></p>
 
+        
+				<button class="collapsible" data-toggle="collapse" data-target="#ozturk2013geodezik"><b>Abstract</b></button>
+				<div id="ozturk2013geodezik" class="collapse">
+  					        <p>Interactive image segmentation or foreground extraction is an important component of image editing tools. Studies on separating foreground from background quickly, practically and with little error has grown enormously over the last decade. Interactive image segmentation has usage in photo mounting, (medical) image processing etc. In general, interactive segmentation by definition is classifying pixels as either foreground or background which are not indicated by users using the information of labeled pixels. Labeling both foreground and background pixels separately is not the only way of expressing object of interest. Other than that, there are ways like drawing a bounding box on object or scribbling object boundaries. However, proposed methods differ according to the user interaction. For example, a method working for the former interaction type will not work for the bounding box where only background pixels are indicated. That is why only methods using the former and the last interaction type is considered in this work. In this thesis, I worked on estimating the label of unlabeled pixels by using foreground and background information obtained from user and developed a new method. The proposed method first does over segmentation on image and groups similar pixels. Thus, pixel count is greatly reduced. Then, probability of pixels being belonged to foreground or background are calculated by taking into account the spatial location of pixels to the scribble locations. Later, by using these probabilities geodesic distances to user scribbles are calculated. Pixels having distance below a certain value are labeled. Finally, remaining unlabeled pixels are labeled by calculating probabilities using the spatially closest labeled pixel information. Obtained results are compared with the methods using the same marking technique quantitatively on a publicly available dataset.
+</p>
+				</div>
         
 
 				
-				<p>Proceedings of the IEEE conference on computer vision and pattern recognition, 2014. </p>
+				<p>Master Thesis, 2013. </p>
 				
 
 
-				<!-- <p>@inproceedings{girshick2014rich,
-  title = {Rich feature hierarchies for accurate object detection and semantic segmentation},
-  author = {Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra},
-  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
-  pages = {580--587},
-  year = {2014}
+				<!-- <p>@mastersthesis{ozturk2013geodezik,
+  title = {Geodezik mesafe tabanl{\i} etkile{\c{s}}imli resim b{\"o}l{\"u}mlemesi},
+  author = {{\"O}zt{\"u}rk, Orkun},
+  year = {2013},
+  school = {TOBB Ekonomi ve Teknoloji {\"U}niversitesi Fen Bilimleri Enstit{\"u}s{\"u}},
+  journal = {Master Thesis}
 }
 </p> -->
 			</div>
@@ -246,24 +253,31 @@
   		<!-- <div class="col-sm-6 clearfix"> -->
 			 <div class="well">
 
-				<pubtit>Caffe: Convolutional architecture for fast feature embedding</pubtit>
+				<pubtit>Network lifetime maximization and localized routing tradeoff in wireless sensor networks</pubtit>
         
 
-				<p><i>Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor</i></p>
+				<p><i>Uzun, Erkam and Aksac, Alper and Ozturk, Orkun and Kiziloz, Hakan E and Incebacak, Davut and Tavli, Bulent and Bicakci, Kemal</i></p>
 
+        
+				<button class="collapsible" data-toggle="collapse" data-target="#uzun2013network"><b>Abstract</b></button>
+				<div id="uzun2013network" class="collapse">
+  					        <p>Maximization of lifetime is one of the most important design goals in Wireless sensor networks (WSN). On the other hand, for any given network design problem scalability is also of utmost importance. Yet, these two design goals are acting against each other. In this study, a characterization of achievable network lifetime as a function of the degree of localization of the routing operations under ideal conditions by using three localized routing approaches is performed. We built a novel linear programming framework to model the network behavior and by using the framework sampled the parameter space.
+</p>
+				</div>
         
 
 				
-				<p>Proceedings of the 22nd ACM international conference on Multimedia, 2014. </p>
+				<p>2013 21st Signal Processing and Communications Applications Conference (SIU), 2013. </p>
 				
 
 
-				<!-- <p>@inproceedings{jia2014caffe,
-  title = {Caffe: Convolutional architecture for fast feature embedding},
-  author = {Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor},
-  booktitle = {Proceedings of the 22nd ACM international conference on Multimedia},
-  pages = {675--678},
-  year = {2014}
+				<!-- <p>@inproceedings{uzun2013network,
+  title = {Network lifetime maximization and localized routing tradeoff in wireless sensor networks},
+  author = {Uzun, Erkam and Aksac, Alper and Ozturk, Orkun and Kiziloz, Hakan E and Incebacak, Davut and Tavli, Bulent and Bicakci, Kemal},
+  booktitle = {2013 21st Signal Processing and Communications Applications Conference (SIU)},
+  pages = {1--4},
+  year = {2013},
+  organization = {IEEE}
 }
 </p> -->
 			</div>
@@ -322,27 +336,283 @@
   		<!-- <div class="col-sm-6 clearfix"> -->
 			 <div class="well">
 
-				<pubtit>Object detection with discriminatively trained part-based models</pubtit>
+				<pubtit>Estimating the importance of terrorists in a terror network</pubtit>
         
 
-				<p><i>Felzenszwalb, Pedro F and Girshick, Ross B and McAllester, David and Ramanan, Deva</i></p>
+				<p><i>Elhajj, Ahmed and Elsheikh, Abdallah and Addam, Omar and Alzohbi, Mohamad and Zarour, Omar and Aksaç, Alper and Öztürk, Orkun and Özyer, Tansel and Ridley, Mick and Alhajj, Reda</i></p>
 
+        
+				<button class="collapsible" data-toggle="collapse" data-target="#elhajj2013estimating"><b>Abstract</b></button>
+				<div id="elhajj2013estimating" class="collapse">
+  					        <p>While criminals may start their activities at individual level, the same is in general not true for terrorists who are mostly organized in well established networks. The effectiveness of a terror network could be realized by watching many factors, including the volume of activities accomplished by its members, the capabilities of its members to hide, and the ability of the network to grow and to maintain its influence even after the loss of some members, even leaders. Social network analysis, data mining and machine learning techniques could play important role in measuring the effectiveness of a network in general and in particular a terror network in support of the work presented in this chapter. We present a framework that employs clustering, frequent pattern mining and some social network analysis measures to determine the effectiveness of a network. The clustering and frequent pattern mining techniques start with the adjacency matrix of the network. For clustering, we utilize entries in the table by considering each row as an object and each column as a feature. Thus features of a network member are his/her direct neighbors. We maintain the weight of links in case of weighted network links. For frequent pattern mining, we consider each row of the adjacency matrix as a transaction and each column as an item. Further, we map entries into a 0/1 scale such that every entry whose value is greater than zero is assigned the value one; entries keep the value zero otherwise. This way we can apply frequent pattern mining algorithms to determine the most influential members in a network as well as the effect of removing some members or even links between members of a network. We also investigate the effect of adding some links between members. The target is to study how the various members in the network change role as the network evolves. This is measured by applying some social network analysis measures on the network at each stage during the development. We report some interesting results related to two benchmark networks: the first is 9/11 and the second is Madrid bombing.
+</p>
+				</div>
         
 
 				
-				<p>IEEE transactions on pattern analysis and machine intelligence, 2009. </p>
+				<p>Mining Social Networks and Security Informatics, 2013. </p>
 				
 
 
-				<!-- <p>@article{felzenszwalb2009object,
-  title = {Object detection with discriminatively trained part-based models},
-  author = {Felzenszwalb, Pedro F and Girshick, Ross B and McAllester, David and Ramanan, Deva},
-  journal = {IEEE transactions on pattern analysis and machine intelligence},
-  volume = {32},
-  number = {9},
-  pages = {1627--1645},
-  year = {2009},
-  publisher = {IEEE}
+				<!-- <p>@incollection{elhajj2013estimating,
+  title = {Estimating the importance of terrorists in a terror network},
+  author = {Elhajj, Ahmed and Elsheikh, Abdallah and Addam, Omar and Alzohbi, Mohamad and Zarour, Omar and Aksa{\c{c}}, Alper and {\"O}zt{\"u}rk, Orkun and {\"O}zyer, Tansel and Ridley, Mick and Alhajj, Reda},
+  booktitle = {Mining Social Networks and Security Informatics},
+  pages = {267--283},
+  year = {2013},
+  publisher = {Springer}
+}
+</p> -->
+			</div>
+		<!-- </div> -->
+	</div>
+  </div>
+</div>
+
+
+	
+<!-- 
+<div class="col-sm-6 clearfix">
+ <div class="well">
+  <pubtit></pubtit>
+  <img src="/images/pubpic/" class="img-responsive" width="33%" style="float: left" />
+  <p></p>
+  <p><em></em></p>
+  <p><strong><a href=""></a></strong></p>
+  <p class="text-danger"><strong> </strong></p>
+  <p> </p>
+ </div>
+</div>
+ --></li>
+<li><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 9px;
+  white-space: normal;
+  height: 10%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+  	<div id="publications" class="col-sm-12">
+  		<!-- <div class="col-sm-6 clearfix"> -->
+			 <div class="well">
+
+				<pubtit>A consistency-based feature selection method allied with linear SVMs for HIV-1 protease cleavage site prediction</pubtit>
+        
+
+				<p><i>Öztürk, Orkun and Aksaç, Alper and Elsheikh, Abdallah and Özyer, Tansel and Alhajj, Reda</i></p>
+
+        
+				<button class="collapsible" data-toggle="collapse" data-target="#ozturk2013consistency"><b>Abstract</b></button>
+				<div id="ozturk2013consistency" class="collapse">
+  					        <p>Predicting type-1 Human Immunodeficiency Virus (HIV-1) protease cleavage site in protein molecules and determining its specificity is an important task which has attracted considerable attention in the research community. Achievements in this area are expected to result in effective drug design (especially for HIV-1 protease inhibitors) against this life-threatening virus. However, some drawbacks (like the shortage of the available training data and the high dimensionality of the feature space) turn this task into a difficult classification problem. Thus, various machine learning techniques, and specifically several classification methods have been proposed in order to increase the accuracy of the classification model. In addition, for several classification problems, which are characterized by having few samples and many features, selecting the most relevant features is a major factor for increasing classification accuracy.
+</p>
+				</div>
+        
+
+				
+				<p>PloS one, 2013. </p>
+				
+
+
+				<!-- <p>@article{ozturk2013consistency,
+  title = {A consistency-based feature selection method allied with linear SVMs for HIV-1 protease cleavage site prediction},
+  author = {{\"O}zt{\"u}rk, Orkun and Aksa{\c{c}}, Alper and Elsheikh, Abdallah and {\"O}zyer, Tansel and Alhajj, Reda},
+  journal = {PloS one},
+  volume = {8},
+  number = {8},
+  pages = {e63145},
+  year = {2013},
+  publisher = {Public Library of Science}
+}
+</p> -->
+			</div>
+		<!-- </div> -->
+	</div>
+  </div>
+</div>
+
+
+	
+<!-- 
+<div class="col-sm-6 clearfix">
+ <div class="well">
+  <pubtit></pubtit>
+  <img src="/images/pubpic/" class="img-responsive" width="33%" style="float: left" />
+  <p></p>
+  <p><em></em></p>
+  <p><strong><a href=""></a></strong></p>
+  <p class="text-danger"><strong> </strong></p>
+  <p> </p>
+ </div>
+</div>
+ --></li>
+<li><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 9px;
+  white-space: normal;
+  height: 10%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+  	<div id="publications" class="col-sm-12">
+  		<!-- <div class="col-sm-6 clearfix"> -->
+			 <div class="well">
+
+				<pubtit>A novel semantic web browser for user centric information retrieval: PERSON</pubtit>
+        
+
+				<p><i>Aksac, Alper and Ozturk, Orkun and Dogdu, Erdogan</i></p>
+
+        
+				<button class="collapsible" data-toggle="collapse" data-target="#aksac2012novel"><b>Abstract</b></button>
+				<div id="aksac2012novel" class="collapse">
+  					        <p>As semantic web technologies mature and consequently more semantic web data is published on the web, there is a growing need for tools to access and use this data in user friendly ways. The most generic tool to access semantic web data is the common web browser. Developing plug-ins for advanced web browsers is one way of adding semantic information to web documents automatically or semi-automatically. To enable this enhancement, we present a novel semantic web browser called PERSON which is short for PERsonal Semantic extensiON. PERSON is an extension for Mozilla Firefox Web Browser and it adds semantics to users’ browsing experience by annotating web resources, associating them in categorical, entity-based manner and presenting more meaningful, structured documents to users. As a notable difference, semantic layer provided by PERSON works not only on web pages navigated by users but also on RSS data of user choice. Additionally, acquired content from web resources associated with linked data domains bring users together with structured information easily. In this paper, we evaluate PERSON as a new approach for semantic web browsing and present the analysis, design and implementation of PERSON and compare its features with related tools.</p>
+				</div>
+        
+
+				
+				<p>Expert Systems with Applications, 2012. </p>
+				
+
+
+				<!-- <p>@article{aksac2012novel,
+  title = {A novel semantic web browser for user centric information retrieval: PERSON},
+  author = {Aksac, Alper and Ozturk, Orkun and Dogdu, Erdogan},
+  journal = {Expert Systems with Applications},
+  volume = {39},
+  number = {15},
+  pages = {12001--12013},
+  year = {2012},
+  publisher = {Elsevier}
+}
+</p> -->
+			</div>
+		<!-- </div> -->
+	</div>
+  </div>
+</div>
+
+
+	
+<!-- 
+<div class="col-sm-6 clearfix">
+ <div class="well">
+  <pubtit></pubtit>
+  <img src="/images/pubpic/" class="img-responsive" width="33%" style="float: left" />
+  <p></p>
+  <p><em></em></p>
+  <p><strong><a href=""></a></strong></p>
+  <p class="text-danger"><strong> </strong></p>
+  <p> </p>
+ </div>
+</div>
+ --></li>
+<li><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 9px;
+  white-space: normal;
+  height: 10%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+  	<div id="publications" class="col-sm-12">
+  		<!-- <div class="col-sm-6 clearfix"> -->
+			 <div class="well">
+
+				<pubtit>Real-time multi-objective hand posture/gesture recognition by using distance classifiers and finite state machine for virtual mouse operations</pubtit>
+        
+
+				<p><i>Aksaç, Alper and Öztürk, Orkun and Özyer, Tansel</i></p>
+
+        
+				<button class="collapsible" data-toggle="collapse" data-target="#aksacc2011real"><b>Abstract</b></button>
+				<div id="aksacc2011real" class="collapse">
+  					        <p>Cameras that are connected to computers record sequence of digital images of human hand in order to interpret human posture/gesture. Human hand posture/gesture recognition has been utilized for providing virtual reality mechanism and it is still an ongoing research in human-computer interaction (HCI) community. Virtual reality can be operated on a particular program but it will be more effective if the entire system can be controlled for the sake of generality. Another direction is the applicability of virtual reality in real time. In this paper, we have developed a virtual mouse system that can recognize the pre-defined mouse movements in real time regardless of the context. Our real time hand recognition system is three fold. 1) skin detection, 2) feature extraction and 3) recognition. For recognition, various features with their own objectives are constructed from hand postures and compared according to the similarity measures and the best-matched posture is used as a mouse action to control the cursor of the computer.
+</p>
+				</div>
+        
+
+				
+				<p>2011 7th International Conference on Electrical and Electronics Engineering (ELECO), 2011. </p>
+				
+
+
+				<!-- <p>@inproceedings{aksacc2011real,
+  title = {Real-time multi-objective hand posture/gesture recognition by using distance classifiers and finite state machine for virtual mouse operations},
+  author = {Aksa{\c{c}}, Alper and {\"O}zt{\"u}rk, Orkun and {\"O}zyer, Tansel},
+  booktitle = {2011 7th International Conference on Electrical and Electronics Engineering (ELECO)},
+  pages = {II--457},
+  year = {2011},
+  organization = {IEEE}
 }
 </p> -->
 			</div>
